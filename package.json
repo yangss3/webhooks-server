@@ -1,15 +1,17 @@
 {
   "name": "@yangss/webhooks-server",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "A Github webhooks server for front-end projects auto build & deploy.",
   "main": "index.js",
   "bin": {
     "ghs": "./bin/index.js"
   },
   "scripts": {
-    "start": "pm2 start ./lib/hooks.js --watch"
+    "start": "node ./lib/hooks.js"
   },
-  "author": "",
+  "author": {
+    "name": "Nicholas Yang"
+  },
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
