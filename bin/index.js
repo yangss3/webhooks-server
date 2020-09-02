@@ -5,10 +5,10 @@ const { execCmd } = require('../lib/utils/helper')
 
 program
   .version(
-    `git-webhooks-server v${require('../package.json').version}`,
+    `git-webhooks v${require('../package.json').version}`,
     '-v, --version'
   )
-  .name('git-webhooks-server')
+  .name('git-webhooks')
   .usage('<command> [options]')
 
 program

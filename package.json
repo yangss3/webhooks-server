@@ -4,7 +4,7 @@
   "description": "A Github webhooks server for front-end projects auto build & deploy.",
   "main": "index.js",
   "bin": {
-    "ghs": "./bin/index.js"
+    "webhooks": "./bin/index.js"
   },
   "scripts": {
     "start": "node ./lib/hooks.js"
