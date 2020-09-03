@@ -8,7 +8,7 @@ program
     `git-webhooks v${require('../package.json').version}`,
     '-v, --version'
   )
-  .name('git-webhooks')
+  .name('webhooks')
   .usage('<command> [options]')
 
 program
