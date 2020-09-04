@@ -24,8 +24,8 @@ program
   .description('Restart the webhooks server')
   .action(async () => {
     try {
-      const {stdout, stderr} = await execCmd('pm2 restart webhooks')
-      if(stdout) {
+      const { stdout, stderr } = await execCmd('pm2 restart webhooks')
+      if (stdout) {
         console.log('Restart. Done')
       }
       console.error(stderr)
@@ -39,8 +39,8 @@ program
   .description('Stop the webhooks server')
   .action(async () => {
     try {
-      const {stdout, stderr} = await execCmd('pm2 stop webhooks')
-      if(stdout) {
+      const { stdout, stderr } = await execCmd('pm2 delete webhooks')
+      if (stdout) {
         console.log('Stop. Done.')
       }
       console.error(stderr)
