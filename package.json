@@ -1,7 +1,7 @@
 {
   "name": "@yangss/webhooks-server",
   "version": "0.0.1",
-  "description": "A Github webhooks server for front-end projects auto build & deploy.",
+  "description": "An auto build and deploy tool for front-end projects based on Github webhooks and Nodejs.",
   "main": "index.js",
   "bin": {
     "webhooks": "./bin/index.js"
@@ -19,5 +19,21 @@
     "express": "^4.17.1",
     "fs-extra": "^9.0.1",
     "inquirer": "^7.3.3"
+  },
+  "keywords": [
+    "github",
+    "webhooks",
+    "node",
+    "frontend",
+    "auto",
+    "deploy",
+    "build"
+  ],
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
