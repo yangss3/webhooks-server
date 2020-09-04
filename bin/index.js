@@ -14,8 +14,9 @@ program
 program
   .command('start')
   .description('Start an webhooks server for auto deployment')
-  .action(() => {
-      require('../lib/start.js')()
+  .option('-p, --port [port]')
+  .action((cmd) => {
+      require('../lib/start.js')(cmd.port)
   })
 
 program
